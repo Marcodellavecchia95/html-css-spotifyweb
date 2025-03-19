@@ -1,3 +1,9 @@
+:root {
+  --player-height: 90px;
+  --sidebar-width: 50px;
+  --top-content-height: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +12,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #141922;
 }
 
 img {
@@ -48,4 +55,28 @@ ul {
 [class*="col"] {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.top {
+  height: calc(100vh - var(--player-height));
+  /* width: calc(100% - var(--sidebar-width)); */
+  display: flex;
+}
+.player {
+  height: var(--player-height);
+  background-color: #282828;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: black;
+}
+
+.top-content {
+  height: var(--top-content-height);
+  background-color: #080b12;
+}
+
+.main-content {
+  width: calc(100% - var(--sidebar-width));
 }
