@@ -59,7 +59,7 @@ ul {
 
 .top {
   height: calc(100vh - var(--player-height));
-  /* width: calc(100% - var(--sidebar-width)); */
+
   display: flex;
 }
 .player {
