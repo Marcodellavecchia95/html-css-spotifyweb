@@ -196,6 +196,7 @@ h5 {
 .player-center {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .player-center-icons {
@@ -204,12 +205,38 @@ h5 {
 .player-center-icons ul li {
   display: inline;
   color: white;
-  margin-right: 5px;
-}
-.fa-circle-play {
+  margin-right: 30px;
   font-size: 1.5rem;
 }
+.fa-circle-play {
+  font-size: 2rem;
+}
 
+.counter-bar {
+  height: 5px;
+  background-color: gray;
+  width: 100px;
+}
+
+.counter-bar-gone {
+  height: 5px;
+  background-color: white;
+  width: 25%;
+}
+
+.player-center-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.player-right {
+  display: flex;
+  align-items: center;
+}
+
+.player-right ul li {
+  display: inline;
+}
 @media screen and (min-width: 639px) {
   :root {
     --sidebar-width: 250px;
