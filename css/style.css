@@ -196,16 +196,20 @@ h5 {
 .player-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+}
+
+.player-center ul {
+  margin-left: 10px;
 }
 
 .player-center-icons {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .player-center-icons ul li {
   display: inline;
   color: white;
-  margin-right: 30px;
+  margin-right: 20px;
   font-size: 1.5rem;
 }
 .fa-circle-play {
@@ -215,7 +219,7 @@ h5 {
 .counter-bar {
   height: 5px;
   background-color: gray;
-  width: 100px;
+  width: 150px;
 }
 
 .counter-bar-gone {
@@ -227,6 +231,13 @@ h5 {
 .player-center-bottom {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.counter-right,
+.counter-left {
+  font-size: 0.8rem;
+  color: white;
 }
 
 .player-right {
@@ -234,8 +245,17 @@ h5 {
   align-items: center;
 }
 
+.player-right ul {
+  margin-right: 5px;
+}
+
 .player-right ul li {
   display: inline;
+  color: white;
+}
+
+.player-right .counter-bar {
+  width: 100px;
 }
 @media screen and (min-width: 639px) {
   :root {
