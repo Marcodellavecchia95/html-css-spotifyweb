@@ -327,6 +327,8 @@ h5 {
   border-radius: 50%;
 }
 
+/* MEDIA QUERY */
+
 @media screen and (min-width: 639px) {
   :root {
     --sidebar-width: 250px;
@@ -413,5 +415,17 @@ h5 {
   .user {
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row .col50 {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .row .col50 {
+    width: calc(100% / 6);
   }
 }
