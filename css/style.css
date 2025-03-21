@@ -349,6 +349,9 @@ h5:hover {
   font-size: 0.9rem;
 }
 
+.sections div:hover {
+  color: white;
+}
 .bottom-content h2 {
   color: white;
   margin: 30px 10px;
