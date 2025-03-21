@@ -114,6 +114,10 @@ ul {
 .sidebar-top li span {
   display: none;
 }
+.sidebar-top li :hover {
+  color: white;
+}
+
 .sidebar-top li {
   display: flex;
   align-items: center;
@@ -135,9 +139,23 @@ ul {
   margin-right: 10px;
   margin-left: 10px;
 }
+
+.fa-plus :hover {
+  background-color: white;
+  color: white;
+}
 .sidebar-top h4,
 h5 {
   display: none;
+}
+
+.sidebar-top h4,
+h5:hover {
+  color: white;
+}
+
+.create-playlist ul li:hover {
+  color: white;
 }
 
 .sidebar-top .create-playlist {
@@ -152,7 +170,9 @@ h5 {
 .sidebar-bottom span {
   display: none;
 }
-
+.sidebar-bottom span:hover {
+  color: white;
+}
 .bottom-row {
   width: 210px;
   height: 1px;
@@ -189,8 +209,17 @@ h5 {
   margin-right: 15px;
 }
 
+.player-left-list div:hover {
+  text-decoration: underline;
+}
+
 .play-left-icon-list {
   display: flex;
+}
+
+.fa-heart:hover,
+.fa-folder:hover {
+  color: white;
 }
 
 .player-left-list span {
@@ -226,6 +255,27 @@ h5 {
   height: 5px;
   background-color: white;
   width: 25%;
+  position: relative;
+}
+.counter-bar-gone::after {
+  content: "";
+  background-color: white;
+  height: 15px;
+  border-radius: 50%;
+  display: none;
+  width: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transform: translate(50%, -40%);
+}
+.counter-bar:hover .counter-bar-gone {
+  background-color: lime;
+}
+
+.counter-bar:hover .counter-bar-gone::after {
+  display: block;
 }
 
 .player-center-bottom {
