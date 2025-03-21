@@ -17,9 +17,9 @@ body {
   font-weight: bold;
 }
 
-/* img {
+img {
   max-width: 100%;
-} */
+}
 
 a {
   text-decoration: none;
@@ -46,13 +46,13 @@ ul {
   padding-right: 1rem;
 }
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
   row-gap: 2rem;
   margin-left: -1rem;
   margin-right: -1rem;
-}
+} */
 
 [class*="col"] {
   padding-left: 1rem;
@@ -81,6 +81,7 @@ ul {
 
 .main-content {
   width: calc(100% - var(--sidebar-width));
+  overflow: auto;
 }
 
 /* SIDEBAR  */
@@ -281,6 +282,49 @@ h5 {
 
 .sections div {
   font-size: 0.9rem;
+}
+
+.bottom-content h2 {
+  color: white;
+  margin: 30px 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.bottom-content p {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.col50 {
+  max-width: 50%;
+}
+
+.card-bottom {
+  text-align: center;
+}
+
+.song-title {
+  color: white;
+  margin: 10px 0;
+}
+.song-author {
+  font-size: 0.8rem;
+}
+
+.created-fu {
+  display: flex;
+}
+
+.small {
+  flex-wrap: nowrap;
+}
+
+.circle-album {
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 639px) {
