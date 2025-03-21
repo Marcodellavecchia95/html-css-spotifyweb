@@ -331,6 +331,10 @@ h5:hover {
   margin-right: 10px;
 }
 
+.top-content-btn button:hover {
+  padding: 20px 35px;
+  margin-top: 15px;
+}
 .sections {
   display: flex;
   flex-wrap: wrap;
